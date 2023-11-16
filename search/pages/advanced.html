@@ -5,15 +5,56 @@
         <link rel="icon" type="image/x-icon" href="favicon.png">
     </head>
     <body>
-        <a href="index.html">Home</a>
-        <a href="images.html">Images</a>
+
+        <div>
+            <a href="/index.html">Home</a>
+            <a href="images.html">Images</a>
+            <span>Advanced</span>
+        </div>
+        
+        <div>
+            <img src="/assets/googleLogo.png" alt="Google">
+            <span>Advanced</span>
+        </div>
 
         <form action="https://www.google.com/search" method = "GET" name="f">
             <div>
-                <label>all these words:</label><input type="text" name="as_q">
-                <label>this exact word or phrase:</label><input type="text" name="as_epq">
-                <label>any of these words:</label><input type="text" name="as_oq">
-                <label>none of these words:</label><input type="text" name="as_eq">
+                <div>
+                    <span>Find pages with...</span>
+                </div>
+                <div></div>
+                <div>
+                    <span>To do this in the search box</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label>all these words:</label>
+                    <input type="text" name="as_q">
+                    Type the important words:
+                    <span>tricolor rat terrier</span>
+                </div>
+
+                <div>
+                    <label>this exact word or phrase:</label>
+                    <input type="text" name="as_epq">
+                    Put exact words in quotes:
+                    <span>"rat terrier"</span>
+                </div>
+
+                <div>
+                    <label>any of these words:</label>
+                    <input type="text" name="as_oq">
+                    Type OR between all the words you want:
+                    <span>miniature OR standard</span>
+                </div>
+
+                <div>
+                    <label>none of these words:</label>
+                    <input type="text" name="as_eq">
+                    Put a minus sign just before words you don't want:
+                    <span>-rodent, -Jack Russell"</span>
+                </div>
 
                 <input value="Advanced Search" type="submit">
             </div>
