@@ -1,0 +1,47 @@
+#header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+}
+
+#logo {
+    text-align: right;
+}
+
+.advancedForm {
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+input[type=text] {
+    border: 1px solid gray;
+    border-radius: 90px;
+  }
+
+input[type=text]:hover {
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+a:link {
+    color: black; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
