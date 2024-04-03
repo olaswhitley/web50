@@ -1,31 +1,173 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+* {box-sizing: border-box;}
+
+@media (min-width: 1057px) {
+    #advancedForm {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-radius: 0px;
+        display: grid;
+        grid-template-columns: 170px auto 559px;
+        grid-template-rows: 40px 40px 40px 40px 40px;
+        margin: 0 20px 0 30px;
+        padding: 30px 0;
+    }
+    .rightColumn {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        align-items: center;
+        margin: auto 0;
+    }
+}
+
+@media (max-width: 1056px) {
+    #advancedForm {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-radius: 0px;
+        display: grid;
+        grid-template-columns: 170px auto;
+        grid-template-rows: 40px 40px 40px 40px 40px;
+        margin: 0 20px 0 30px;
+        padding: 30px 0;
+    }
+    .rightColumn {
+        display: none;
+    }
+
+}
+
 #header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    align-items: center;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+
+#header img {
+    height: 24px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #logo {
-    text-align: right;
+    height: 92px;
 }
 
-.advancedForm {
-    border: 1px solid black;
-    border-radius: 0px;
+#googleLogoContainer {
+    height: 92px;
+    width: 272px;
+    margin: 86px auto;
+    position: relative;
 }
 
-input[type=text] {
-    border: 1px solid gray;
+#googleLogoContainer img {
+    height: 100%;
+}
+
+#googleLogoContainer span {
+    position: absolute;
+    left: 215px;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(83, 131, 236);
+
+}
+
+#form {
+    height: 142px;
+    text-align: center;
+    padding: 20px;
+}
+
+#form input[name=q] {
+    height: 40px;
+    width: 500px;
+    max-width: calc(100% - 40px);
+    margin: 8px auto;
+    padding: 0px 20px 0px 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid lightgray;
     border-radius: 90px;
-  }
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23888' xmlns='http://www.w3.org/2000/svg' width='14' height='14' class='bi bi-search'><path d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0'/></svg>");
+    background-repeat: no-repeat;
+    background-position: 10px 12px;
+}
 
-input[type=text]:hover {
-    border: 2px solid red;
-    border-radius: 4px;
+.advancedFormHeader {
+    font-size: 18px;
+}
+
+.advancedExamples {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.leftColumn {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    align-items: center;
+    margin: auto 0;
+}
+
+.middleColumn input {
+    width: 95%;
+    height: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 0 8px;
+    border: 1px ridge lightgray;
+}
+
+#advanceBtn {
+    background-color: rgba(87, 134, 230);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 120px;
+    padding: 0;
+}
+
+#advanceBtn:hover {
+    background-color: rgba(91, 139, 245);
+    box-shadow: none;
+}
+
+input[type=text]:hover, input[type=text]:focus {
+    box-shadow: 3px 3px 1em rgb(0 0 0 / 10%);
+}
+
+input[type=submit] {
+    margin: 20px 5px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    color: black;
+    padding: 10px 24px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit]:hover {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 a:link {
     color: black; 
     background-color: transparent; 
     text-decoration: none;
+    margin: 8px;
 }
 
 a:visited {
@@ -44,4 +186,16 @@ a:active {
     color: red;
     background-color: transparent;
     text-decoration: underline;
+}
+
+.currentPage {
+    margin: 8px;
+    color: gray;
+}
+
+#advanced {
+    color: rgb(216, 80, 64);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 1.5em;
 }

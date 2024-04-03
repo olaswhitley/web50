@@ -3,63 +3,84 @@
     <head>
         <title>Search</title>
         <link rel="icon" type="image/x-icon" href="favicon.png">
-        <link rel="stylesheet" href="/search/style.css">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
 
         <div id="header">
-            <a href="/search/index.html">Home</a>
-            <a href="/search/pages/images.html">Images</a>
-            <a href="/search/pages/advanced.html">Advanced</a>
+            <img src="/assets/googleLogo.png" alt="Google">
+            <a href="/index.html">Home</a>
+            <a href="/pages/images.html">Images</a>
+            <span class="currentPage">Advanced</span>
         </div>
         
-        <div>
-            <img src="/search/assets/googleLogo.png" alt="Google">
-            <span>Advanced</span>
+        <div id="advanced">
+            <span>Advanced Search</span>
         </div>
 
-        <form class="advancedForm" action="https://www.google.com/search" method = "GET" name="f">
-            <div>
-                <div>
-                    <span>Find pages with...</span>
-                </div>
-                <div></div>
-                <div>
-                    <span>To do this in the search box</span>
-                </div>
+        <form id="advancedForm" action="https://www.google.com/search" method = "GET" name="f">
+            
+            <div class="leftColumn">
+                <span class="advancedFormHeader">Find pages with...</span>
             </div>
-            <div>
-                <div>
-                    <label>all these words:</label>
-                    <input type="text" name="as_q">
-                    Type the important words:
-                    <span>tricolor rat terrier</span>
-                </div>
+            <div class="middleColumn"></div>
+            <div class="rightColumn">
+                <span class="advancedFormHeader">To do this in the search box</span>
+            </div>
+            
 
-                <div>
-                    <label>this exact word or phrase:</label>
-                    <input type="text" name="as_epq">
-                    Put exact words in quotes:
-                    <span>"rat terrier"</span>
-                </div>
-
-                <div>
-                    <label>any of these words:</label>
-                    <input type="text" name="as_oq">
-                    Type OR between all the words you want:
-                    <span>miniature OR standard</span>
-                </div>
-
-                <div>
-                    <label>none of these words:</label>
-                    <input type="text" name="as_eq">
-                    Put a minus sign just before words you don't want:
-                    <span>-rodent, -Jack Russell"</span>
-                </div>
-
-                <input value="Advanced Search" type="submit">
+            <div class="leftColumn">
+                <label>all these words:</label>
+            </div>
+            <div class="middleColumn">
+                <input type="text" name="as_q">
+            </div>
+            <div class="rightColumn">
+                Type the important words:
+                <span class="advancedExamples"> tricolor rat terrier</span>
             </div>
 
+
+            <div class="leftColumn">
+                <label>this exact word or phrase:</label>
+            </div>
+            <div class="middleColumn">
+                <input type="text" name="as_epq">
+            </div>
+            <div class="rightColumn">
+                Put exact words in quotes:
+                <span class="advancedExamples"> "rat terrier"</span>
+            </div>
+
+
+            <div class="leftColumn">
+                <label>any of these words:</label>
+            </div>
+            <div class="middleColumn">
+                <input type="text" name="as_oq">
+            </div>
+            <div class="rightColumn">
+                Type OR between all the words you want:
+                <span class="advancedExamples"> miniature OR standard</span>
+            </div>
+
+
+            <div class="leftColumn">
+                <label>none of these words:</label>
+            </div>
+            <div class="middleColumn">
+                <input type="text" name="as_eq">
+            </div>
+            <div class="rightColumn">
+                Put a minus sign just before words you don't want:
+                <span class="advancedExamples"> -rodent, -Jack Russell"</span>
+            </div>
+
+            <div class="leftColumn"></div>
+            <div class="middleColumn">
+                <input id="advanceBtn" value="Advanced Search" type="submit">
+            </div>
+            <div class="rightColumn"></div>
 
         </form>
 

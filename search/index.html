@@ -3,27 +3,30 @@
     <head>
         <title>Search</title>
         <link rel="icon" type="image/x-icon" href="favicon.png">
-        <link rel="stylesheet" href="/search/style.css">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
     <body>
         <div>
             <div id="header">
-                <a href="/search/index.html">Home</a>
-                <a href="/search/pages/images.html">Images</a>
-                <a href="/search/pages/advanced.html">Advanced</a>
+                <span class="currentPage">Home</span>
+                <a href="/pages/images.html">Images</a>
+                <a href="/pages/advanced.html">Advanced</a>
             </div>
             
             <div id="logo">
-                <img src="assets/googleLogo.png" alt="Google">
+                <div id="googleLogoContainer">
+                    <img src="assets/googleLogo.png" alt="Google">
+                </div>
             </div>
 
-            <div>
+            <div id="form">
                 <form action="https://www.google.com/search">
                     <input type="text" name="q">
 
                     <div>
-                        <input type="submit" value="Google Search">
-                        <input name="btnI" type="submit" value="Im Feeling Lucky">
+                        <input name="btnK" type="submit" value="Google Search">
+                        <input name="btnI" type="submit" value="I'm Feeling Lucky">
                     </div>
 
                 </form>
